@@ -2,6 +2,10 @@ body{
     margin:0;
 }
 
+button{
+    cursor: pointer;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -102,4 +106,25 @@ ul{
     display:flex;
     gap:10%;
     height:50%;
+    align-items: center;
+}
+
+.buttons>button{
+    color:white;
+    background-color: #1992d4;
+    padding:10px;
+    border-radius: 20px;
+}
+
+.searchbar > button{
+    border: none;
+    padding:none;
+    background-color: white;
+}
+
+input{
+    border-radius: 20px;
+    width:55%;
+    height:40%;
+    background-color: beige;
 }
