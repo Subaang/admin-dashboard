@@ -13,13 +13,14 @@ li{
     grid-template-columns: 1fr 4fr;
     justify-content: center;
     align-items: center;
+    margin:5%;
 }
 
 .logo{
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 5%;
+   gap:5%;
 }
 
 .container{
@@ -33,6 +34,9 @@ li{
 .header{
     background-color: #ffffff;
     grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .sidebar{
@@ -60,4 +64,42 @@ ul{
     font-size: 1.2em;
 }
 
+.searchbar,.profile{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
 
+.profile{
+    font-size: 20px;
+}
+
+.name{
+    display: grid;
+    grid-template-columns: 10fr 7fr 7fr 50fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.name > img{
+    grid-column: 2/3;
+    grid-row: 1 / -1;
+
+}
+
+.l1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-content: center;
+}
+.l2{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+
+.buttons{
+    display:flex;
+    gap:10%;
+    height:50%;
+}
