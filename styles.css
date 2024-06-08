@@ -71,7 +71,6 @@ ul{
 .searchbar,.profile{
     display:flex;
     gap:10px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -126,5 +125,63 @@ input{
     border-radius: 20px;
     width:55%;
     height:40%;
-    background-color: beige;
+    background-color: #e2e8f0;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.your-projects{
+    grid-row: 1/-1;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr 5fr 5fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.your-projects > .text{
+    justify-self: start;
+    grid-column: 1/-1;
+    font-size: 1.5em;
+    align-self: end;
+}
+
+.project{
+    width:60%;
+    height:60%;
+    background-color: white;
+    border-radius: 10px;
+    border-left: #f0b429 solid 5px;
+}
+
+.announcements{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.announcement{
+    width:60%;
+    height:60%;
+    background-color: white;
+    border: black solid 1px;
+}
+
+.trending{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendings{
+    width:60%;
+    height:60%;
+    background-color: white;
+    border: black solid 1px;
 }
